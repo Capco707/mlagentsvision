@@ -65,10 +65,10 @@ public class RollerAgent : Agent
         }
     }
 
-    // public override void Heuristic(in ActionBuffers actionsOut)
-    // {
-    //     var action = actionsOut.ContinuousActions;
-    //     action[0] = Input.GetAxis(("Horizontal"));
-    //     action[1] = Input.GetAxis(("Vertical"));
-    // }
+    public override void Heuristic(in ActionBuffers actionsOut)
+    {
+        var action = actionsOut.ContinuousActions;
+        action[0] = Input.GetAxis(("Horizontal"));
+        action[1] = Input.GetAxis(("Vertical"));
+    }
 }

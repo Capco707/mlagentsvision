@@ -26,7 +26,7 @@ public class GetPerception : MonoBehaviour
         testSensors = gameObject.GetComponents<CameraSensorComponent>();
 
         testSensors[0].Camera = RenderTextureScripts.capturePasses[(int)cameraRecord.img].camera;
-        testSensors[1].Camera = RenderTextureScripts.capturePasses[(int)cameraRecord.tag].camera;
+        testSensors[1].Camera = RenderTextureScripts.capturePasses[(int)cameraRecord.id].camera;
         testSensors[2].Camera = RenderTextureScripts.capturePasses[(int)cameraRecord.depth].camera;
         
 
